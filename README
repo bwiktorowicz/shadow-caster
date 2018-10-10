@@ -1,0 +1,8 @@
+Tool that returns shadow polygon of an arbitrary shading plane or 3D objected projected on arbitrary plane along a provided solar vector.  The inputs required are shaded plane, shading plane or 3D shading object(s).
+Currently, this tool only supports either single/multiple 3D solid(s) or a two dimensional plane as the shading object.  3D solids are read from binary STL file.
+
+Tool requires the numpy-stl and shapely packages to be installed.
+
+TODO:
+-allow multiple shading arrays combined with 3D objects
+-improve algorithm that isolates 3D objects as performance does not scale well when mesh size is on the order of thousands of elements
